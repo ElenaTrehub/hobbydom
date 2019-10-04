@@ -1,0 +1,54 @@
+.footer
+  width: 100%
+  background: #e2e2e2
+  padding-bottom: 35px
+  &__container
+    +container()
+    flex-wrap: wrap
+  &__menu
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 40px
+    &-title
+      font-family: $header-font
+      color: #858585
+      font-size: 16px
+      line-height: 27px
+      margin-bottom: 20px
+    &-list
+      li
+        font-size: 12px
+        font-family: $main-font
+        margin-bottom: 12px
+      a
+        text-decoration: none
+        color: #858585
+
+
+  &__empty
+    +col(1)
+    margin-left: $gutter
+  &__bottom
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 40px
+    &-item
+      font-size: 12px
+      font-family: $main-font
+      margin-bottom: 12px
+      color: #858585
+      span
+        color: $main-color
+        border-bottom: 1px solid $main-color
+
+.width-two
+  +col(2)
+  margin-left: $gutter
+
+.width-three
+  +col(3)
+  margin-left: $gutter

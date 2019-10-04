@@ -1,0 +1,110 @@
+.header
+  &__top
+    background-color: $main-color
+    &-container
+      +container()
+  &__btn-menu, &__popup-menu
+    display: none
+  &__contact
+    font-family: $menu-font
+    font-size: 14px
+    align-items: center
+    a
+      color: #ffffff
+  &__location
+    margin-right: 25px
+    padding-left: 27px
+    position: relative
+    box-sizing: border-box
+    &:before
+      content: url("../images/location.png")
+      position: absolute
+      left: 0
+      top: -2px
+  &__phone
+    margin-right: 25px
+    padding-left: 27px
+    position: relative
+    box-sizing: border-box
+    &-item
+      margin-right: 14px
+    &:before
+      content: url("../images/mobile.png")
+      position: absolute
+      left: 0
+      top: -2px
+  &__email
+    padding-left: 27px
+    position: relative
+    box-sizing: border-box
+    &:before
+      content: url("../images/mail.png")
+      position: absolute
+      left: 0
+      top: -2px
+  &__right
+    display: flex
+    align-items: center
+    height: 41px
+    .jq-selectbox__select
+      border: none
+      color: #FFFFFF
+      font-size: 16px
+      font-family: $header-font
+      font-weight: bold
+      padding: 0 25px 0 10px
+      margin-left: 25px
+      margin-top: 6px
+    .jq-selectbox__trigger-arrow:before
+      content: url("../images/arrow.png")
+      transform: rotate(360deg)
+      top: 0
+    .jq-selectbox__dropdown
+      border: none
+      background: none
+  &__price
+    text-transform: uppercase
+    font-family: $menu-font
+    color: #FFFFFF
+    margin-left: 25px
+    font-size: 16px
+  &__icons-facebook
+    margin-left: 15px
+  &__content
+    background-image: url("../images/header-shape.png")
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    &-container
+      +container()
+      +col(12)
+      padding: 15px 0
+      justify-content: center
+    &-right
+      display: flex
+      &-search
+        margin-top: 35px
+        margin-left: 50px
+        a
+          margin-right: 15px
+.left__menu, .right__menu
+  margin-top: 35px
+  li
+    display: inline-block
+  a
+    color: #000
+    font-size: 16px
+    line-height: 36px
+    font-family: $menu-font
+    transition: all 0.4s
+    text-transform: uppercase
+    &:hover
+      color: $main-color
+
+
+
+
+
+
+
+

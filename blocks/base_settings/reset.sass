@@ -7,5 +7,63 @@ ul,li
   list-style: none
   margin: 0
   padding: 0
+.title
+  width: 100%
+  text-align: center
+  font-family: $menu-font
+  color: $header-color
+  text-transform: uppercase
+  font-weight: bold
+  margin-bottom: 50px
+.person
+  width: 100%
+  background: #e2e2e2
+  box-sizing: border-box
+  padding: 35px 60px 50px 65px
+  display: flex
+  justify-content: flex-start
+  margin-bottom: 30px
+  &__foto
+    margin-right: 80px
+    color: #787878
+    font-size: 22px
+    img
+      margin-bottom: 35px
+    p
+      font-family: $main-font
+      text-align: center
+      transition: all 0.4s
+      margin: 0
+      padding-bottom: 20px
+      &:hover
+        color: $header-color
+        cursor: pointer
+    a
+
+      color: #787878
+      font-family: $main-font
+      display: block
+      text-align: center
+      font-size: 22px
+      transition: all 0.4s
+      padding-top: 5px
+      text-decoration: underline
+      &:hover
+        color: $header-color
+        cursor: pointer
+  &__content
+    color: #787878
+    &-title
+      font-family: $header-font
+      text-align: left
+      font-size: 26px
+      line-height: 26px
+      margin-bottom: 40px
+    &-text
+      font-family: $main-font
+      text-align: left
+      font-size: 22px
+      line-height: 37px
+      margin-bottom: 40px
 
 

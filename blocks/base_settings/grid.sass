@@ -1,0 +1,38 @@
+$xxs: "(min-width: 337px)"
+$xs: "(max-width: 500px)"
+$sm: "(min-width: 1023px)"
+$md: "(min-width: 1200px)"
+$lg: "(min-width: 1500px)"
+
+
+
+$cols: 12
+$gutter: 33px
+$col: calc( 100% / #{$cols} )
+
+
+.container
+
+  box-sizing: border-box
+  display: flex
+  @media #{$xxs}
+    width: 100%
+  @media #{$xs}
+    width: 100%
+  @media #{$sm}
+    width: 950px
+    margin: 0 auto
+  @media #{$md}
+    width: 1142px
+    margin: 0 auto
+  @media #{$lg}
+    width: 1368px
+    margin: 0 auto
+
+=container($align: space-between, $wrap:wrap)
+  @extend .container
+  justify-content: $align
+  flex-wrap: nowrap
+
+=col($num)
+  width: calc( ((((100% - (#{$gutter} * (#{$cols} - 1)))/#{$cols})*#{$num}) + ( #{$gutter} * (#{$num} - 1)) ))

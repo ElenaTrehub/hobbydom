@@ -1,0 +1,379 @@
+@media (min-width: 1500px)
+  .title
+    font-size: 46px
+  .header
+    &__top
+      height: 41px
+      &-container
+        +col(10)
+    &__contact
+      display: flex
+      flex-direction: row
+      height: 41px
+  .about
+    &__popup
+      left: 670px
+      top: 20px
+
+  .slick-prev
+    right: 80px
+  .slick-next
+    right: 0px
+  .left__menu
+    li
+      margin-right: 45px
+
+  .right__menu
+    li
+      margin-left: 45px
+@media (max-width: 1499px)
+  .title
+    font-size: 46px
+  .header
+    &__top
+      height: 41px
+      &-container
+        +col(10)
+    &__contact
+      flex-direction: row
+      display: flex
+      height: 41px
+  .about
+    &__popup
+      left: 570px
+      top: 20px
+  .slick-prev
+    right: 80px
+  .slick-next
+    right: 0px
+  .left__menu
+    li
+      margin-right: 30px
+
+  .right__menu
+    li
+      margin-left: 30px
+
+@media (max-width: 1199px)
+  #overlay .number-slides
+    position: absolute
+    top: 430px
+    left: 180px
+  .title
+    font-size: 26px
+  .header
+    &__top
+      height: 41px
+      &-container
+        +col(10)
+    &__contact
+      display: flex
+      flex-direction: row
+      height: 41px
+  .about
+    padding-bottom: 70px
+    &__popup
+      left: 460px
+      top: 20px
+  .slick-prev
+    right: 80px
+  .slick-next
+    right: 0px
+  .left__menu
+    li
+      margin-right: 10px
+
+  .right__menu
+    li
+      margin-left: 10px
+  .guide
+    margin-top: 50px
+  .admin
+    margin-top: 50px
+  .teachers
+    margin-top: 50px
+  .partner
+    margin-top: 50px
+    margin-bottom: 50px
+  .footer
+    &__empty
+      display: none
+    &__menu
+      justify-content: start
+    &__bottom
+      justify-content: start
+  .width-two
+    +col(3)
+  .width-three
+    +col(3)
+
+@media (max-width: 1023px)
+  #overlay .number-slides
+    position: absolute
+    top: 340px
+    left: 140px
+  .person
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__foto
+      margin-right: 0
+    &__content
+      &-title
+        text-align: center
+
+  .header
+    &__content-container
+      width: 96%
+        justify-content: space-between
+        margin: 0 auto
+    &__top
+      height: auto
+
+      &-container
+        width: 96%
+        justify-content: space-between
+        margin: 0 auto
+    &__contact
+      display: flex
+      flex-direction: column
+      height: auto
+      align-items: flex-start
+      padding-bottom: 10px
+    &__right
+      display: flex
+      flex-direction: column
+      height: auto
+      align-items: flex-end
+      padding-bottom: 10px
+      padding-top: 10px
+      justify-content: flex-end
+    &__location, &__phone, &__email
+      margin-top: 10px
+  .right__menu
+    margin-left: 20px
+  .left__menu
+    margin-right: 20px
+    li
+      text-align: right
+  .left__menu, .right__menu
+    li
+      display: block
+  .about
+    padding-bottom: 10px
+    &__content
+      flex-direction: column
+      width: 96%
+      margin: 0 auto
+    &__slider
+      width: 100%
+      position: relative
+      margin-right: 0
+    &__popup
+      left: 640px
+      top: 20px
+    &__text
+      margin-top: 100px
+      height: auto
+      width: 100%
+      &-title
+        margin-bottom: 20px
+  .slick-prev
+    right: 80px
+  .slick-next
+    right: 0px
+  .left__menu
+    li
+      margin-right: 10px
+
+  .right__menu
+    li
+      margin-left: 10px
+  .guide
+    margin-top: 30px
+  .admin
+    margin-top: 30px
+  .teachers
+    margin-top: 30px
+  .partner
+    margin-top: 30px
+    margin-bottom: 30px
+  .footer
+    &__empty
+      display: none
+    &__menu
+      justify-content: start
+    &__bottom
+      justify-content: start
+  .width-two
+    +col(3)
+  .width-three
+    +col(3)
+@media (max-width: 500px)
+  #overlay .number-slides
+    position: absolute
+    top: 220px
+    left: 90px
+  #close-popup
+    top: 20px
+    right: 20px
+  .header
+    &__content
+      &-container
+        justify-content: space-between
+    &__btn-menu
+      display: block
+      cursor: pointer
+    &__popup-menu
+      display: block
+      ul
+        display: none
+        position: absolute
+        left: 0
+        right: 0
+        margin-top: 100px
+        z-index: 5
+
+      li
+        display: block
+        text-align: center
+      a
+        display: block
+        background-color: $main-color
+        border-bottom: 1px solid #FFFFFF
+        border-top: 1px solid #FFFFFF
+        color: #FFFFFF
+        &:hover
+          color: $header-color
+      li+li
+        padding-left: 0
+
+    &__top
+      height: auto
+      &-container
+        width: 96%
+        flex-direction: column
+        justify-content: center
+        margin: 0 auto
+    &__content
+      &-right-search
+        display: none
+    &__contact
+      display: flex
+      flex-direction: column
+      height: auto
+      align-items: center
+      padding-bottom: 10px
+    &__right
+      display: flex
+      flex-direction: column
+      height: auto
+      align-items: center
+      padding-bottom: 10px
+      padding-top: 10px
+      justify-content: center
+    &__location, &__phone, &__email
+      margin-top: 10px
+  .left__menu
+    display: none
+  .right__menu
+    display: none
+
+  .about
+    &__content
+      flex-direction: column
+      width: 96%
+      margin: 0 auto
+    &__slider
+      width: 100%
+      position: relative
+      margin-right: 0
+    &__popup
+      left: 400px
+      top: 20px
+    &__text
+      margin-top: 100px
+      height: auto
+      width: 100%
+      &-title
+        margin-bottom: 20px
+  .slick-prev
+    right: 120px
+  .slick-next
+    right: 0px
+  .left__menu
+    li
+      margin-right: 10px
+
+  .right__menu
+    li
+      margin-left: 10px
+
+@media (max-width: 337px)
+  #overlay .number-slides
+    position: absolute
+    top: 160px
+    left: 60px
+  #close-popup
+    top: 20px
+    right: 5px
+  #magnify .slick-next
+    right: -60px
+  #magnify .slick-prev
+    left: -60px
+  .header
+    &__top
+      height: auto
+      &-container
+        width: 96%
+        flex-direction: column
+        justify-content: center
+        margin: 0 auto
+    &__content
+      &-right-search
+        display: none
+    &__contact
+      display: flex
+      flex-direction: column
+      height: auto
+      align-items: center
+      padding-bottom: 10px
+    &__right
+      display: flex
+      flex-direction: column
+      height: auto
+      align-items: center
+      padding-bottom: 10px
+      padding-top: 10px
+      justify-content: center
+    &__location, &__phone, &__email
+      margin-top: 10px
+  .about
+    &__content
+      flex-direction: column
+      width: 96%
+      margin: 0 auto
+    &__slider
+      width: 100%
+      position: relative
+      margin-right: 0
+    &__popup
+      left: 200px
+      top: 20px
+    &__text
+      margin-top: 100px
+      height: auto
+      width: 100%
+      &-title
+        margin-bottom: 20px
+  .slick-prev
+    right: 120px
+  .slick-next
+    right: 0px
+  .left__menu
+    li
+      margin-right: 10px
+
+  .right__menu
+    li
+      margin-left: 10px
